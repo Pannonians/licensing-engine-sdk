@@ -1,5 +1,5 @@
 {
-  "name": "licensing-engine-sdk",
+  "name": "case3d-licensing-engine-sdk",
   "version": "1.0.0",
   "main": "dist/index.js",
   "author": "pvukmanovic-pannonians <petar.vukmanovic@pannonians.com>",
