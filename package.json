@@ -1,0 +1,8 @@
+{
+  "name": "licensing-engine-sdk",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "author": "pvukmanovic-pannonians <petar.vukmanovic@pannonians.com>",
+  "license": "MIT",
+  "private": true
+}
