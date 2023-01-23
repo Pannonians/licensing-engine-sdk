@@ -1,8 +1,14 @@
 {
   "name": "licensing-engine-sdk",
   "version": "1.0.0",
-  "main": "index.ts",
+  "main": "src/index.ts",
   "author": "pvukmanovic-pannonians <petar.vukmanovic@pannonians.com>",
   "license": "MIT",
-  "private": true
+  "private": true,
+  "scripts": {
+    "build": "tsc --build"
+  },
+  "devDependencies": {
+    "typescript": "^4.9.4"
+  }
 }
