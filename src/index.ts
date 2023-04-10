@@ -8,7 +8,7 @@ const error = {
 };
 
 const http = axios.create({
-  baseURL: process.env.LICENSING_ENGINE_API_ORIGIN,
+  baseURL: process.env.LICENSING_ENGINE_API_ORIGIN || process.env.VUE_APP_LICENSING_ENGINE_API_ORIGIN,
   withCredentials: true,
 });
 
@@ -99,4 +99,4 @@ type GetLicensesApi = {
 export const licensingEngineApi = (authMethod: 'domain' | 'token', token = null) =>
   createApi<{
     getLicenses: GetLicensesApi;
-  }>(`${process.env.LICENSING_ENGINE_API_ORIGIN}`, authMethod, token);
+  }>(`${process.env.LICENSING_ENGINE_API_ORIGIN || process.env.VUE_APP_LICENSING_ENGINE_API_ORIGIN}`, authMethod, token);
